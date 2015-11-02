@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15C27e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3H4-lc-2Tb">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Setup-->
+        <scene sceneID="7fB-xn-OaE">
+            <objects>
+                <viewController title="Setup" id="dgX-rm-tkL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EUd-rg-eNz"/>
+                        <viewControllerLayoutGuide type="bottom" id="5dr-dZ-kyR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ewx-Y5-tTs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setup" id="m6r-Rs-8Le"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="US2-Tz-Xb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="431" y="399"/>
+        </scene>
+        <!--Ehrscape Patient RCM -->
+        <scene sceneID="JZb-vd-RV8">
+            <objects>
+                <tabBarController title="Ehrscape Patient RCM " id="3H4-lc-2Tb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="eds-ko-fSx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dgX-rm-tkL" kind="relationship" relationship="viewControllers" id="gj9-mQ-ovP"/>
+                        <segue destination="8Oh-aV-Mlw" kind="relationship" relationship="viewControllers" id="Nia-Ab-StB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6uR-aM-C9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639" y="-127"/>
+        </scene>
+        <!--RCM Vitals Overview-->
+        <scene sceneID="ntL-GO-Mme">
+            <objects>
+                <tableViewController title="RCM Vitals Overview" id="8Oh-aV-Mlw" customClass="VitalsViewController" customModule="RCM_Ehrscape" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="9OK-tK-hEC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="bZw-SH-REk">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <items>
+                                <navigationItem title="ChemoMonitor overview" id="9pB-LE-j16"/>
+                            </items>
+                        </navigationBar>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gsn-uu-CoA">
+                            <rect key="frame" x="0.0" y="116" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <state key="normal" title="Save record"/>
+                        </button>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tempCell" id="Mj4-Dg-HaL">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mj4-Dg-HaL" id="kuI-ls-Gzb">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="8Oh-aV-Mlw" id="k7r-NK-KaL"/>
+                            <outlet property="delegate" destination="8Oh-aV-Mlw" id="KGC-vH-vvd"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Chemo monitor" id="pR7-hM-L0s"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="prH-ac-HEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-269"/>
+        </scene>
+    </scenes>
+</document>

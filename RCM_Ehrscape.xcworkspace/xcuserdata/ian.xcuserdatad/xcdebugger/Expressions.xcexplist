@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "VitalsViewController.tableView(UITableView!, numberOfRowsInSection : Int) -&gt; Int:VitalsViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VitalsViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:VitalsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.aqlResponse[indexPath.item]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.(btnSymptoms(ViewController) -&gt; (AnyObject) -&gt; ()).(closure #1):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "post[&quot;templates&quot;][0][&quot;templateId&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VitalsViewController.ReloadTable(Int) -&gt; ():VitalsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "compositionCount">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(UITableView!, cellForRowAtIndexPath : NSIndexPath!) -&gt; UITableViewCell!:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.textLabel?.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
